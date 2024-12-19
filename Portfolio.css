@@ -229,3 +229,88 @@ border: 0.03125rem solid grey;
 font-size: 0.9375rem ;
 padding: 0.625rem 0.9375rem;
 }
+/* Enhanced Navigation Bar Animation */
+/* Card hover effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+/* Logo hover animation */
+.logo {
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #666;
+}
+
+/* Button hover effects */
+.button {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transform: translateY(-2px);
+}
+
+.button2 {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button2:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Navigation link hover effect */
+.nav-ul li a {
+    position: relative;
+}
+
+.nav-ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.nav-ul li a:hover::after {
+    width: 100%;
+}
+
+/* Container hover effect */
+.container1 .info {
+    transition: transform 0.3s ease;
+}
+
+.container1 .card:hover .info {
+    transform: translateY(-5px);
+}
+
+/* Image hover overflow protection */
+.card {
+    overflow: hidden;
+}
